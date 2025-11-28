@@ -3,240 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trámite de Pasaporte Italiano por Vía Judicial - Resumen</title>
+    <title>Guía Consular Italia: Fran (Chetumal)</title>
     
-	<style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        margin: 0;
-        padding: 20px;
+    <style>
+        :root {
+            --ita-green: #008C45;
+            --ita-red: #CD212A;
+            --ita-white: #F4F9F1;
+            --text-main: #333;
+            --text-light: #666;
+            --link-blue: #0056b3;
+            --warning-bg: #fff3cd;
+            --warning-border: #ffeeba;
+            --warning-text: #856404;
+            --info-bg: #e8f4fd;
+            --info-border: #0056b3;
+        }
 
-        /* Fondo con la bandera italiana */
-        background: linear-gradient(to right, #009246 33%, #ffffff 33%, #ffffff 66%, #ce2b37 66%);
-        background-attachment: fixed; /* opcional: fondo fijo al hacer scroll */
-    }
-
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: rgba(255, 255, 255, 0.85); /* blanco con transparencia */
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    h1, h2, h3 {
-        color: #1a1a1a;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 10px;
-        margin-top: 20px;
-    }
-    h1 {
-        text-align: center;
-        border-bottom: none;
-        padding-bottom: 0;
-        font-size: 1.8em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    h3 {
-        font-size: 1.2em;
-        margin-top: 15px;
-        color: #333;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 5px;
-    }
-    ul, ol {
-        margin: 15px 0;
-        padding-left: 25px;
-    }
-    li {
-        margin-bottom: 10px;
-    }
-    p {
-        margin: 15px 0;
-    }
-    .highlight {
-        background-color: #e9ecef;
-        padding: 15px;
-        border-left: 5px solid #007bff;
-        margin: 20px 0;
-        border-radius: 4px;
-    }
-    .step {
-        margin-bottom: 25px;
-    }
-    .step-number {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: #007bff;
-        margin-right: 10px;
-    }
-    .step-content {
-        display: inline;
-    }
-    a.button {
-        display: inline-block;
-        padding: 10px 14px;
-        background: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 600;
-    }
-    a.button:hover {
-        background: #005fcc;
-    }
-    .small {
-        font-size: 0.95em;
-        color: #555;
-    }
-    @media (max-width: 600px) {
         body {
-            padding: 10px;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
         }
-        .container {
-            padding: 15px;
-        }
-        h1 {
-            font-size: 1.5em;
-        }
-        h2 {
-            font-size: 1.3em;
-        }
-        h3 {
-            font-size: 1.1em;
-        }
-    }
-</style>
 
+        /* Banner Tricolor Fijo */
+        .top-banner {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--ita-green) 33.33%, #ffffff 33.33%, #ffffff 66.66%, var(--ita-red) 66.66%);
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: var(--ita-green);
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            color: var(--ita-red);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        p { margin-bottom: 1rem; }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 25px;
+        }
+        
+        li { margin-bottom: 8px; }
+
+        /* Cajas de Alerta y Notas */
+        .alert-box {
+            background-color: var(--warning-bg);
+            border-left: 5px solid #ffc107;
+            color: var(--warning-text);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .info-box {
+            background-color: var(--info-bg);
+            border-left: 5px solid var(--info-border);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .important-note {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* Estilos de botones */
+        .btn {
+            display: inline-block;
+            background-color: var(--link-blue);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .btn:hover { background-color: #004494; text-decoration: none; color: white; }
+        
+        .btn-action-group {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .btn-download { background-color: var(--ita-green); }
+        .btn-download:hover { background-color: #006e36; }
+        
+        .btn-guide { background-color: #6c757d; }
+        .btn-guide:hover { background-color: #5a6268; }
+
+        /* Steps visuales */
+        .step {
+            display: flex;
+            margin-bottom: 25px;
+        }
+        .step-num {
+            flex-shrink: 0;
+            width: 35px;
+            height: 35px;
+            background-color: var(--text-main);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .step-content {
+            flex-grow: 1;
+        }
+
+        /* Tabla simulada para archivos */
+        .file-upload {
+            border: 1px dashed #ccc;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .file-title {
+            font-weight: bold;
+            color: var(--link-blue);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.85rem;
+            color: #777;
+        }
+        footer a { color: #777; }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+            .btn { display: block; margin: 10px auto; width: 100%; box-sizing: border-box;}
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Del choripán al tiramisú: manual Raisistico para tramitar el pasaporte italiano</h1>
-        <p>Esta guía te orienta en los pasos para obtener tu pasaporte italiano si ya tienes la sentencia judicial firme y las actas italianas emitidas y registradas por una comuna.</p>
 
-        <div class="highlight">
-            <p><strong>Punto de partida:</strong></p>
+    <div class="top-banner"></div>
+
+    <div class="container">
+        <h1>Guía de Trámites Consulares</h1>
+        <div class="subtitle">Personalizada para <strong>Fran</strong> • Chetumal, Quintana Roo<br>(Ciudadanía Vía Judicial)</div>
+
+        <div class="btn-action-group">
+            <h3>📂 Paso 0: Prepara tu documentación</h3>
+            <p>Antes de comenzar, asegúrate de tener descargados tus documentos judiciales (Sentencia, Acta transcrita, etc.).</p>
+            <a class="btn btn-download" href="https://1drv.ms/f/c/a95a878727b5e2e7/IgBZ1IKbXyTvT5bTNGw_b3E6AR_MeuOGC4lhqxRANiDniP4?e=b7YdHi" target="_blank">⬇️ Descargar Mis Documentos</a>
+            
+        </div>
+
+        <h2>1. Inscripción en el AIRE (Obligatorio) </h2>
+        <p>Al residir en Chetumal por más de 12 meses, es <strong>obligatorio</strong> inscribirse. Este es el primer paso antes de poder pedir el pasaporte. El trámite es <strong>gratuito</strong>. <a href="https://ambcittadelmessico.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/anagrafe-degli-italiani-residenti-allestero-aire/">Ver pagina oficial Registro de italianos residentes en el extranjero (AIRE).</a></p>
+        
+        <div class="info-box">
+            <strong>⏱️ Tiempos de proceso:</strong><br>
+            La ley establece un máximo de <strong>180 días</strong> para procesar la solicitud. La fecha oficial de inscripción será el día que envíes la solicitud completa en el portal, no cuando ellos la acepten.
+        </div>
+
+		<div class="btn-action-group">
+            <a class="btn" href="https://serviziconsolari.esteri.it" target="_blank">Ir al Portal Fast It ➜</a>
+            <a class="btn btn-guide" href="./AIRE-guida-002.pdf" target="_blank">📖 Descargar guía oficial inscripción AIRE</a>
+        </div>
+		
+        <h3>ETAPA A: Llenado en Fast It (Paso a Paso)</h3>
+        <p>Regístrate en el portal, activa tu cuenta vía email y selecciona: <em>"Registro Consular y AIRE"</em> > <em>"Solicitar la inscripción..."</em>.</p>
+
+        <div class="step">
+            <div class="step-num">P1</div>
+            <div class="step-content">
+                <strong>Página 1: Registro</strong><br>
+                Inicio del proceso general.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">P2</div>
+            <div class="step-content">
+                <strong>Página 2: Datos Personales (CRÍTICO)</strong><br>
+                Pon atención especial aquí para evitar rechazos:
+                <ul>
+                    <li><strong>Municipio de transcripción del acta de nacimiento:</strong><br>
+                        <span class="important-note">⚠️ Importante caso Judicial:</span> No pongas "Roma" por defecto. En nuestro caso hay que poner "Napoli" porque es en esa <em>Comune</em> donde se transcribió la sentencia.
+                    </li>
+                    <li><strong>Dirección en México:</strong><br>
+                        Debe ser exacta: <em>Quintana Roo - Chetumal - Calle - Número - Colonia - CP</em>. Debe coincidir palabra por palabra con el comprobante de domicilio que subirás.
+                    </li>
+                    <li><strong>Municipio de última residencia:</strong><br>
+                        Al haber nacido en el extranjero y nunca haber vivido en Italia, debes repetir el <strong>municipio de transcripción de tu acta</strong> (el mismo del punto anterior).
+                    </li>
+                    <li><strong>Estado Civil:</strong><br>
+                        Debe coincidir con tu estatus actual registrado en Italia. Si te casaste y no has registrado el matrimonio en Italia, apareces como "Soltero".
+                    </li>
+                    <li><strong>Familiares:</strong><br>
+                         Marca la casilla <em>"Se solicita también la inscripción al AIRE..."</em> solo si tus familiares (esposa/hijos) son ciudadanos italianos o si estás enviando sus actas para reconocimiento.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">P3</div>
+            <div class="step-content">
+                <strong>Página 3: Familiares Convivientes</strong><br>
+                Ingresa los datos de quienes viven contigo (cónyuge/hijos), incluso si no son italianos.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">P4</div>
+            <div class="step-content">
+                <strong>Página 4: Hijos NO Convivientes</strong><br>
+                Obligatorio declarar hijos menores de edad aunque no vivan contigo.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">P6</div>
+            <div class="step-content">
+                <strong>Página 6: Generar y Firmar</strong><br>
+                1. Descarga el PDF generado ("Formulario").<br>
+                2. Imprímelo.<br>
+                3. <strong>Fírmalo a mano</strong> (firma autógrafa, igual a tu pasaporte/INE).<br>
+                4. Escanéalo en buena calidad.
+            </div>
+        </div>
+
+        <h3>ETAPA B: Carga de Documentos (Los 3 PDFs)</h3>
+        <p>El sistema exige 3 archivos PDF. Máximo 1MB - 5MB (según permita el portal, intenta que sean ligeros pero legibles).</p>
+
+        <div class="file-upload">
+            <span class="file-title">📄 ARCHIVO 1: Formulario Firmado</span>
+            Sube el PDF que generaste en el Paso 6, ya escaneado con tu firma.
+        </div>
+
+        <div class="file-upload">
+            <span class="file-title">🆔 ARCHIVO 2: Identidad + Ciudadanía</span>
+            Escanea en un solo PDF multipágina:
+            <ol>
+                <li><strong>Tu Identificación:</strong> Pasaporte Mexicano (vigente) o INE.</li>
+                <li><strong>Prueba de ciudadanía (Caso Judicial):</strong>
+                    <ul>
+                        <li>Idealmente: <em>Estratto dell’atto di nascita</em> (Acta transcrita en el Comune).</li>
+                        <li>Si aún no tienes el acta física: Adjunta la sentencia y el certificado de "Passaggio in Giudicato" que demuestran que eres italiano.</li>
+                    </ul>
+                </li>
+                <li><strong>Identificaciones de familia:</strong> Si aplicas con hijos/esposa, sus documentos también.</li>
+            </ol>
+        </div>
+
+        <div class="file-upload">
+            <span class="file-title">🏠 ARCHIVO 3: Residencia en Chetumal</span>
+            Debe probar que vives donde declaraste. Incluye:
             <ul>
-                <li>Tienes una sentencia judicial firme que reconoce tu ciudadanía italiana.</li>
-                <li>Tus actas italianas, nacimiento y matrimonio, ya fueron emitidas y registradas por la comuna de Nápoles.</li>
-                <li>Vives en el extranjero, por ejemplo Argentina, México, Suiza, España.</li>
+                <li><strong>Comprobante de Domicilio:</strong> Luz, Agua, Teléfono fijo o Contrato de renta. <br><em>*Nota: Si el recibo no está a tu nombre, no importa, pero la dirección debe ser idéntica a la del formulario.</em></li>
+                <li><strong>Estatus Migratorio:</strong> Al ser mexicano, basta tu Pasaporte Mexicano o INE (nuevamente) para probar que resides legalmente en México.</li>
             </ul>
         </div>
 
-        <hr>
+        <div class="alert-box">
+            <strong>⚠️ IMPORTANTE: Monitoreo y Correcciones</strong><br>
+            Si hay un error, la Embajada te avisará a través del portal Fast-It (y a veces por email).<br>
+            Tienes <strong>solo 30 días</strong> para corregir el error subiendo los documentos nuevos en el portal. Si no lo haces en ese plazo, la solicitud se cancela y pierdes tu lugar en la fila, teniendo que empezar de cero (otros 180 días).<br>
+            <em>Recomendación: Entra a Fast-It una vez a la semana para ver el estatus.</em>
+        </div>
 
-        <h2><span class="step-number">1.</span> Obtén el Codice Fiscale, si aún no lo tienes</h2>
-        <p>Aunque no es un requisito obligatorio para el pasaporte, es un número de identificación esencial en Italia que te será útil para muchos trámites futuros. Puedes solicitarlo en el consulado italiano de tu país presentando tu acta de nacimiento italiana y un documento de identidad.</p>
+        <h2>2. Trámite de Pasaporte (Chetumal)</h2>
+        <p>Al vivir en Quintana Roo, te corresponde la jurisdicción del <strong>Consulado Honorario en Playa del Carmen</strong> para la toma de huellas. Sin embargo, como tu inscripción AIRE es reciente (o está en proceso), hay un paso previo obligatorio.</p>
 
-        <hr>
+        <h3>Paso 1: Autorización "Nulla Osta" (Obligatorio para nuevos)</h3>
+        <p>La Embajada en CDMX indica que si tu inscripción AIRE tiene menos de 180 días (estatus "En elaboración" o recién confirmada), <strong>NO</strong> puedes ir directo al consulado honorario. Debes pedir permiso primero.</p>
+        
+        <div class="info-box">
+            <strong>Enviar Email a CDMX:</strong><br>
+            <strong>Para:</strong> <a href="mailto:passaporti.messico@esteri.it">passaporti.messico@esteri.it</a><br>
+            <strong>Asunto:</strong> SOLICITUD DE AUTORIZACIÓN DE PASAPORTE - [Tu Nombre Completo]<br>
+            <strong>Cuerpo:</strong> "Soy ciudadano italiano residente en Chetumal. He enviado mi solicitud AIRE vía Fast-It el día [Fecha]. Solicito autorización para tramitar mi pasaporte en el Consulado Honorario de Playa del Carmen."<br>
+            <strong>Adjunto:</strong> Copia de tu identificación y comprobante de solicitud Fast-It.
+        </div>
+        <p><em>Espera a recibir la respuesta de este correo antes de continuar.</em></p>
 
-        <h2 id="aire"><span class="step-number">2.</span> Inscríbete en el AIRE</h2>
-        <p>La inscripción en el Registro de Italianos Residentes en el Extranjero, AIRE, es obligatoria. Sin ella, no podrás solicitar tu pasaporte ni acceder a otros servicios consulares.</p>
-
-        <h3>¿Dónde y cómo hacerlo, con FAST IT?</h3>
-        <p>La mayoría de los consulados gestionan la inscripción AIRE en línea por la plataforma oficial <strong>FAST IT</strong>.</p>
-        <p>
-            <a class="button" href="https://serviziconsolari.esteri.it" target="_blank" rel="noopener noreferrer">Abrir FAST IT</a>
-            <span class="small">serviziconsolari.esteri.it</span>
-        </p>
-
-        <h3>Pasos en FAST IT</h3>
-        <ol>
-            <li><strong>Crear cuenta o acceder</strong>. Entra con correo y contraseña. Si tienes SPID o CIE, también sirven para ingresar.</li>
-            <li><strong>Seleccionar tu consulado</strong>. Indica país y ciudad de residencia. El sistema asigna el consulado competente, por ejemplo Buenos Aires, Córdoba, Mendoza.</li>
-            <li><strong>Ir a Anagrafe Consolare y AIRE</strong>. Elige la opción <em>Richiesta di iscrizione all’AIRE</em>.</li>
-            <li><strong>Completar el formulario</strong>. Datos personales, dirección completa en tu país de residencia, estado civil, datos de familiares si corresponde.</li>
-            <li><strong>Subir la documentación</strong>. Archivos en PDF o JPG, ver lista más abajo.</li>
-            <li><strong>Enviar la solicitud</strong>. Guarda el número de protocolo y descarga el comprobante si el sistema lo ofrece.</li>
-            <li><strong>Seguimiento</strong>. Revisa el estado desde tu panel de FAST IT. Te notificarán por correo cuando esté aprobada.</li>
-        </ol>
-
-        <h3>Documentación para subir en FAST IT</h3>
+        <h3>Paso 2: La Cita en Playa del Carmen</h3>
+        <p>Una vez tengas la autorización (o si ya pasaron >6 meses en AIRE), contacta al consulado honorario. <strong>No uses el sistema Prenot@mi.</strong></p>
+        
         <ul>
-            <li>Documento de identidad italiano vigente o pasaporte italiano, si ya lo tienes. Si no, documento del país de residencia.</li>
-            <li>Acta de nacimiento italiana que te envió la comuna.</li>
-            <li>Comprobante de residencia actual, por ejemplo factura de servicios, contrato de alquiler, DNI con domicilio, certificado de domicilio.</li>
-            <li>Si tu ciudadanía fue por vía judicial, pueden solicitar copia de la sentencia o la comunicación de la comuna, no siempre.</li>
-            <li>Para familia, adjunta actas correspondientes, matrimonio, nacimiento de hijos, si no están ya registradas en Italia.</li>
-        </ul>
-
-        <h3>Estado y tiempos del trámite</h3>
-        <p>El proceso puede tardar semanas o meses, según la carga del consulado y de la comuna italiana. La confirmación llega por correo electrónico cuando se completa la inscripción.</p>
-
-        <h3>Ventajas de usar FAST IT</h3>
-        <ul>
-            <li>Trámite en línea, sin turno presencial para la inscripción AIRE.</li>
-            <li>Subida de documentos y seguimiento desde tu cuenta.</li>
-            <li>Actualización de domicilio y datos de manera simple en el futuro.</li>
-        </ul>
-
-        <h3>Errores comunes y consejos</h3>
-        <ul>
-            <li><strong>Dirección incompleta</strong>. Incluye calle, altura, código postal y ciudad. Evita abreviaturas confusas.</li>
-            <li><strong>Archivos ilegibles</strong>. Sube PDFs o imágenes claras, sin cortes. Peso razonable, menor a 5 MB por archivo si el sistema lo exige.</li>
-            <li><strong>Datos civiles desactualizados</strong>. Si te casaste o tuviste hijos, adjunta actas para que las transcriban. Así evitas rechazos o demoras.</li>
-            <li><strong>No olvidar el comprobante de residencia</strong>. Es la causa más frecuente de observaciones.</li>
-        </ul>
-
-        <h3>¿Qué necesitas, resumen rápido?</h3>
-        <ul>
-            <li>Acta de nacimiento italiana.</li>
-            <li>Documento de identidad vigente, italiano o del país de residencia.</li>
-            <li>Prueba de residencia actual.</li>
-            <li>En su caso, sentencia judicial y actas civiles adicionales, matrimonio o hijos.</li>
-        </ul>
-
-        <hr>
-
-        <h2><span class="step-number">3.</span> Confirmación de la inscripción en el AIRE</h2>
-        <p>Cuando tu solicitud sea aprobada, el consulado te lo notificará por email. Desde ese momento eres ciudadano italiano residente en el extranjero a efectos consulares y puedes utilizar los servicios del consulado.</p>
-
-        <hr>
-
-        <h2><span class="step-number">4.</span> Solicita el Pasaporte Italiano</h2>
-        <p>Una vez inscrito en el AIRE, puedes solicitar el pasaporte en tu consulado.</p>
-
-        <h3>¿Cómo pedir turno?</h3>
-        <p>La mayoría de los consulados solo otorgan turnos a personas ya inscritas en el AIRE. Verifica el sistema de turnos del consulado competente.</p>
-
-        <h3>Documentación necesaria para el pasaporte</h3>
-        <ul>
-            <li>Documento de identidad vigente del país de residencia.</li>
-            <li>Acta de nacimiento italiana.</li>
-            <li>Confirmación de tu inscripción en el AIRE.</li>
-            <li>Comprobante de residencia.</li>
-            <li>Pago de la tasa consular según arancel vigente.</li>
-        </ul>
-        <p>En la cita te tomarán huellas y foto. El pasaporte suele tardar desde algunos días hasta pocas semanas, según el consulado.</p>
-
-        <hr>
-
-        <h2>Preguntas frecuentes</h2>
-
-        <h3>¿Debo viajar a Italia para alguno de estos trámites?</h3>
-        <p><strong>No</strong>. Con sentencia firme y actas emitidas, los trámites se hacen en el consulado del país de residencia.</p>
-
-        <h3>¿Puedo inscribirme en el AIRE solo con las actas?</h3>
-        <p>Sí. En general alcanza con las actas italianas y la documentación básica. Si el reconocimiento fue judicial, podrían pedir la sentencia.</p>
-
-        <h3>¿Se puede tramitar el pasaporte para mis hijos menores?</h3>
-        <p>Sí. Una vez que tus hijos tengan sus actas italianas y estén inscritos en el AIRE, puedes solicitar su pasaporte.</p>
-
-        <hr>
-
-        <h2>Recomendaciones finales</h2>
-        <ul>
-            <li><strong>Verifica requisitos específicos</strong> en el sitio del consulado competente, pueden variar.</li>
-            <li>Usa FAST IT para inscribirte en el AIRE y para actualizar domicilio en el futuro.</li>
-            <li>Conserva copias digitales y físicas de todo lo enviado y recibido.</li>
-        </ul>
-    </div>
-</body>
-</html>
-```
-
+            <li><strong>Email:</strong> <a href="mailto:consolatoplaya@gmail.com">consolatoplaya@gmail.com</a></li>
+            <li><strong>Dirección:</strong> Calle 23 Sur entre
